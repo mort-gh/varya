@@ -1,0 +1,156 @@
+.format {
+    @extend %light-blue-bg;
+    position: relative;
+    padding: 58px 0 60px;
+    overflow: hidden;
+
+
+    &::after {
+        display: block;
+        content: "";
+        width: 200px;
+        height: 200px;
+        background-image: url("./images/svg/sputnik-fornat.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 0;
+        right: -100px;
+    }
+}
+
+.format-list__image {
+    position: relative;
+}
+
+.format-list__image-svg {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.format-list__item:first-of-type .format-list__image-svg {
+    fill: #ec007b;
+}
+
+.format-list__item:nth-of-type(2) .format-list__image-svg {
+    fill: #fec240;
+}
+
+.format-list__item:last-of-type .format-list__image-svg {
+    fill: #4f7df0;
+}
+
+.format-list__item {
+    padding-left: 40px;
+    position: relative;
+}
+
+.section__title {
+    @extend %section-title;
+}
+
+.format-title {
+    margin-bottom: 70px;
+}
+
+.format-list__item-content {
+    margin-bottom: 15px;
+    font-family: $font-helvetica-bold;
+    color: $color-dark-grey;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.6;
+}
+
+.format-list__item:not(:last-of-type) {
+    margin-bottom: 34px;
+}
+
+.format-list__item-phrase {
+    font-family: $font-helvetica-roman;
+    color: $color-dark-grey;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.format__image {
+    position: relative;
+    right: 50px;
+    bottom: 100px;
+    color: $color-grey;
+}
+
+@media (min-width: 768px) {
+
+    .format-title  {
+        font-size: 20px;
+    }
+
+    .format {
+
+        &::after {
+            width: 358px;
+            height: 358px;
+            right: -68px;
+        }
+
+        &-list__item-content {
+            font-style: 20px;
+        }
+
+        &-list__item-phrase {
+            font-size: 16px;
+        }
+    }
+
+}
+
+@media (min-width: 1440px) {
+
+    .format-title {
+        font-size: 30px;
+    }
+    
+    .format {
+
+        &::after {
+            width: 550px;
+            height: 550px;
+            right: 0;
+        }
+    }
+
+    .section__title .format-title {
+        font-size: 30px;
+        letter-spacing: 1.8px;
+        line-height: 45px;
+        text-align: left;
+        margin-bottom: 50px;
+    }
+
+    .format-list {
+        padding-left: 220px;
+    }
+
+    .format-list__item-content {
+        font-size: 30px;
+        line-height: 30px;
+        letter-spacing: 0.9;
+    }
+
+    .format-list__item:not(:last-of-type) {}
+
+    .format-list__item-phrase {
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.48;
+    }
+
+    .format-list__item-phrase-second {
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.48;
+    }
+}

@@ -1,0 +1,29 @@
+%section-title {
+    font-size: 15px;
+    font-family: $font-oswald;
+    color: $color-dark-grey;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    line-height: 20px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    &-blockquote {
+        color: $color-yellow;
+    }
+}
+
+%blue-bg {
+    background-image: url(../images/svg/header-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+%light-blue-bg {
+    background-image: url(../images/svg/llight-blue-bg.svg);
+    background-repeat: no-repeat;
+    background-position: top 150px center;
+    background-size: cover;
+}

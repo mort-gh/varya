@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <title>Go ITEENS by VARYA</title>
+  <!-- Сюда будет всталена ссылка на файл стилей -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- endinject -->
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+      <div class="container">
+          <nav class="nav">
+              <a href="" class="logo">
+                  <svg class="logo__icon">
+                      <use xlink:href="./images/header-sprite.svg#icon-gologo"></use>
+                  </svg>
+              </a>
+              <ul class="nav__list">
+                  <li class="nav__list-item">
+                      <a href="" class="nav__list-link">Smart Start</a>
+                  </li>
+                  <li class="nav__list-item">
+                      <a href="" class="nav__list-link">GoStart Kids</a>
+                  </li>
+                  <li class="nav__list-item">
+                      <a href="" class="nav__list-link">Контакти</a>
+                  </li>
+              </ul>
+          </nav>
+          <h2 class="header__title">
+              <span class="header__subtitle">IT- курси для підлітків 11-15 років у Києві</span>
+              Перетворіть захоплення комп’ютером у джерело розвитку підлітка
+          </h2>
+          <a href="" class="header__btn">Докладніше</a>
+          <div class="header__img">
+              <svg class="header__img-kids">
+                  <use xlink:href="./images/header-sprite.svg#icon-kids"></use>
+              </svg>
+          </div>
+      </div>
+  
+      <!--Waves Container-->
+      <div class="waves__block">
+          <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+              <defs>
+                  <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+              </defs>
+              <g class="parallax">
+                  <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                  <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                  <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                  <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+              </g>
+          </svg>
+      </div>
+      <!--Waves end-->
+  </header>
+  <!-- Sections -->
+  <main>
+    <section class="offer">
+        <div class="container">
+            <div class="offer__wrapper">
+                    <span class="offer__title">
+                        Ми пропонуємо стати <span class="offer__title-yellow">частиною</span> першої підліткової <span
+                            class="offer__title-yellow">IT-спільноти</span>
+                    </span>
+                    <div class="offer__block">
+                        <img class="offer__img" src="./images/desc/offer-photo.png" alt="GOITEENS offer">
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="gm">
+        <div class="container">
+            <span class="gm__bigtitle">Чому саме IT?</span>
+    
+            <h2 class="section__title">
+                <span class="section__title-blockquote">&#91;</span>
+                IT-фахівці - сучасні герої_
+                <span class="section__title-blockquote">&#93;</span>
+            </h2>
+    
+            <ul class="gm__list">
+                <li class="gm__list-item">
+                    <div class="gm__photo">
+                        <img class="gm__photo-img" src="./images/desc/gm-1.png" alt="Robert">
+                    </div>
+                    <div class="gm__text">
+                        <span class="gm__name">Роберт Даунi</span>
+                        <span class="gm__descr">"Cтають улюбленими кіногероями завдяки міксу харизми і розуму"</span>
+                    </div>
+                </li>
+                <li class="gm__list-item">
+                    <div class="gm__photo">
+                        <img class="gm__photo-img" src="./images/desc/gm-3.png" alt="Mark">
+                    </div>
+                    <div class="gm__text">
+                        <span class="gm__name">Марк Цукерберг</span>
+                        <span class="gm__descr">"Об'єднують мільярди людей по всьому світу"</span>
+                    </div>
+                </li>
+                <li class="gm__list-item">
+                    <div class="gm__photo">
+                        <img class="gm__photo-img" src="./images/desc/gm-2.png" alt="Ilon">
+                    </div>
+                    <div class="gm__text">
+                        <span class="gm__name">Iлон Маск</span>
+                        <span class="gm__descr">"Завойовують серця і змінюють консервативні індустрії"</span>
+                    </div>
+                </li>
+                <li class="gm__list-item">
+                    <div class="gm__photo">
+                        <img class="gm__photo-img" src="./images/desc/gm-4.png" alt="Steve">
+                    </div>
+                    <div class="gm__text">
+                        <span class="gm__name">Стiв Джобс</span>
+                        <span class="gm__descr">"Створюють продукти, після яких світ змінюється назавжди"</span>
+                    </div>
+                </li>
+            </ul>
+    
+        </div>
+    </section>
+    <section class="programs">
+        <div class="container">
+            <h2 class="section__title section__title_carry">
+                <span class="section__title-blockquote">&#91;</span>
+                Підготуйте свою дитину до викликів швидкої сучасності_
+                <span class="section__title-blockquote">&#93;</span>
+            </h2>
+            <p class="programs__subtitle">Ми пропонуємо освітні, практичні програми за такими напрямками:</p>
+            <ul class="programs__list">
+                <li class="programs__item programs__mobile-widt">
+                    <div class="programs__mobile-width">
+                        <h3 class="programs__item-title">Smart Start</h3>
+                        <span class="programs__item-subtitle">13-15</span>
+                        <p class="programs__item-desc">Створення веб-сайтів будь-якої складності. Вивчення HTML/CSS і
+                            JavaScript.
+                        </p>
+                    </div>
+                </li>
+                <li class="programs__item">
+                    <div class="programs__mobile-width">
+                        <h3 class="programs__item-title">Game Dev</h3>
+                        <span class="programs__item-subtitle">13-15</span>
+                        <p class="programs__item-desc">Розробка комп’ютерних ігор. Опанування мови C# і платформи Unity.
+                        </p>
+                    </div>
+                </li>
+                <li class="programs__item">
+                    <div class="programs__mobile-width">
+                        <h3 class="programs__item-title">Digital Design</h3>
+                        <span class="programs__item-subtitle">13-15</span>
+                        <p class="programs__item-desc">Графічний дизайн з нуля. Опанування UI/UX і створення власного
+                            графічного портфоліо.</p>
+                    </div>
+                </li>
+                <li class="programs__item">
+                    <div class="programs__mobile-width">
+                        <h3 class="programs__item-title">GoStart Kids</h3>
+                        <span class="programs__item-subtitle">11-12</span>
+                        <p class="programs__item-desc">Курс з основ програмування для молодших підлітків.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="test">
+        <div class="container">
+            <p class="test__uptitle">
+                Пройдіть тест, щоб дізнатися який напрямок в IT підійде вашій дитині
+            </p>
+            <div class="test-wrap">
+                <div class="test__headline">
+                    <h2 class="section__title">
+                        <span class="section__title-blockquote">&#91;</span>
+                        тест_
+                        <span class="section__title-blockquote">&#93;</span>
+                    </h2>
+                    <p class="test__text">
+                        Ми створили тест, який визначить найбільш відповідний для вас курс, враховуючи особливості характеру
+                        і
+                        особистості. Всього 2 хвилини - і ви дізнаєтеся, яка професія в IT підійде саме для вашої дитини.
+                    </p>
+                </div>
+                <div class="test__question">
+                    <p class="test__question-title">
+                        Питання
+                    </p>
+                    <div class="test__question-pagination test__question-pagination_tablet">
+                        <a href="" class="test__question-pagination-link prev">
+                        </a>
+                        <span class="test__question-pagination-link-counter">
+                            <span class="test__question-pagination-link-counter active">02</span>
+                            /10</span>
+                        <a href="" class="test__question-pagination-link next">
+                        </a>
+                    </div>
+                    <h3 class="test__question-text">
+                        В яку гру більш за все полюбляє грати ваша дитина
+                    </h3>
+                    <div class="test__question-pagination test__question-pagination_desktop">
+                        <a href="" class="test__question-pagination-link prev">
+                            <span class="test__question-pagination-link-text">
+                                Назад
+                            </span>
+                        </a>
+                        <span class="test__question-pagination-link-counter_desktop">
+                            <span class="test__question-pagination-link-counter active">02</span>
+                            /10</span>
+                        <a href="" class="test__question-pagination-link next">
+                            <span class="test__question-pagination-link-text">
+                                Далі
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="test__answer">
+                    <form class="test__answer-form" action="#">
+                        <ul class="test__answer-list">
+                            <li class="test__answer-list-item">
+                                <input class="test__answer-list-item-radio visually-hidden" type="radio"
+                                    name="list-item__answer" value="answer-one" id="answer1">
+                                <label for="answer1" class="test__answer-list-item-text">
+                                    <span class="test__answer-list-item-title">
+                                        Відповідь 1
+                                    </span>
+                                    <span class="test__answer-list-item-desc">
+                                        Майнкрафт
+                                    </span>
+                                </label>
+                            </li>
+                            <li class="test__answer-list-item">
+                                <input class="test__answer-list-item-radio visually-hidden" type="radio"
+                                    name="list-item__answer" value="answer-one" id="answer2">
+                                <label for="answer2" class="test__answer-list-item-text">
+                                    <span class="test__answer-list-item-title">
+                                        Відповідь 2
+                                    </span>
+                                    <span class="test__answer-list-item-desc">
+                                        Знайди 10 відмінностей
+                                    </span>
+                                </label>
+                            </li>
+                            <li class="test__answer-list-item">
+                                <input class="test__answer-list-item-radio visually-hidden" type="radio"
+                                    name="list-item__answer" value="answer-one" id="answer3" checked>
+                                <label for="answer3" class="test__answer-list-item-text">
+                                    <span class="test__answer-list-item-title">
+                                        Відповідь 3
+                                    </span>
+                                    <span class="test__answer-list-item-desc">
+                                        Збирати пазли
+                                    </span>
+                                </label>
+                            </li>
+                            <li class="test__answer-list-item">
+                                <input class="test__answer-list-item-radio visually-hidden" type="radio"
+                                    name="list-item__answer" value="answer-one" id="answer4">
+                                <label for="answer4" class="test__answer-list-item-text">
+                                    <span class="test__answer-list-item-title">
+                                        Відповідь 4
+                                    </span>
+                                    <span class="test__answer-list-item-desc">
+                                        Конструктор LEGO
+                                    </span>
+                                </label>
+                            </li>
+                        </ul>
+                    </form>
+                    <div class="test__question-pagination test__question-pagination_mobile">
+                        <a href="" class="test__question-pagination-link prev">
+                        </a>
+                        <span class="test__question-pagination-link-counter">
+                            <span class="test__question-pagination-link-counter active">02</span>
+                            /10</span>
+                        <a href="" class="test__question-pagination-link next">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skills">
+            <div class="container">
+                <div class="skills__headline">
+                    <h2 class="section__title skills-title">
+                        <span class="section__title-blockquote">&#91;</span>
+                        Три складових курсів goiteens_
+                        <span class="section__title-blockquote">&#93;</span>
+                    </h2>
+                </div>
+                <div class="skills-card">
+                    <ul class="skills-card__list">
+                        <li class="skills-card__list-item">
+                            <svg class="skills-card__list-item-img">
+                                <use xlink:href="./images/svg/skills-sprite.svg#icon-soft-skills"></use>
+                            </svg>
+                            <h3 class="skills-card__list-item-title">
+                                <span class="violet-number">1. </span>Soft Skills
+                            </h3>
+                            <p class="skills-card__list-item-text">
+                                Під час навчання в ігровій формі підліток підвищує свої навички в спілкуванні з однолітками і
+                                старшими наставниками, вчиться працювати в команді за передовою <span>технологією SCRUM</span>,
+                                розвиває спритність, ерудицію, ораторську майстерність і в цілому емоційний інтелект і знаходить
+                                нових друзів.
+                            </p>
+                        </li>
+                        <li class="skills-card__list-item">
+                            <svg class="skills-card__list-item-img">
+                                <use xlink:href="./images/svg/skills-sprite.svg#icon-notebook"></use>
+                            </svg>
+                            <h3 class="skills-card__list-item-title">
+                                <span class="yellow-number">2. </span>Hard Skills
+                            </h3>
+                            <p class="skills-card__list-item-text">
+                                Навчання побудовано навколо освоєння IT-професії — комп'ютерного дизайну або веб-програмування.
+                                Заняття проводять <span>практикуючі IT-фахівці</span>, які передають найактуальніші знання і
+                                своїм
+                                прикладом надихають підлітків до реалізації власних проектів.
+                            </p>
+                        </li>
+                        <li class="skills-card__list-item">
+                            <svg class="skills-card__list-item-img">
+                                <use xlink:href="./images/svg/skills-sprite.svg#icon-real-project"></use>
+                            </svg>
+                            <h3 class="skills-card__list-item-title">
+                                <span class="blue-number">3. </span>Real Project
+                            </h3>
+                            <p class="skills-card__list-item-text">
+                                Програма навчання максимальна практична, студенти виконують завдання — <span>реальні
+                                    проекти</span>.
+                                Вони можуть розробляти дизайн або створити власний сайт в інтернеті з нуля. Зазвичай, батьки,
+                                які приходять на презентацію не вірять, що це зробила команда підлітків.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="skills__btn">Записатися на відкритий урок</a>
+            </div>
+        </section>
+    <section class="format">
+        <div class="container">
+    
+            <h2 class="section__title format-title">
+                <span class="section__title-blockquote">&#91;</span>
+                Формат навчання_
+                <span class="section__title-blockquote">&#93;</span>
+            </h2>
+    
+            <ul class="format-list">
+                <li class="format-list__item">
+                    <svg class="format-list__image-svg">
+                        <use href="./images/svg/symbol-defs.svg#icon-star"></use>
+                    </svg>
+                    <h3 class="format-list__item-content">Дні навчання</h3>
+                    <span class="format-list__item-phrase">Субота або неділя</span>
+                </li>
+    
+                <li class="format-list__item">
+                    <svg class="format-list__image-svg">
+                        <use href="./images/svg/symbol-defs.svg#icon-star"></use>
+                    </svg>
+                    <h3 class="format-list__item-content">Одне заняття включає</h3>
+                    <span class="format-list__item-phrase">
+                        3 години Tech Skills <br>
+                        + 1 година Soft Skills <br>
+                        або розмовна англійська
+                    </span>
+                </li>
+    
+                <li class="format-list__item">
+                    <svg class="format-list__image-svg">
+                        <use href="./images/svg/symbol-defs.svg#icon-star"></use>
+                    </svg>
+                    <h3 class="format-list__item-content">В місяць</h3>
+                    <span class="format-list__item-phrase">
+                        16 навчальних годин <br>
+                        — 2 500 грн
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="teachers">
+        <div class="container">
+            <h2 class="section__title teachers-title">
+                <span class="section__title-blockquote">&#91;</span>
+                викладачі_
+                <span class="section__title-blockquote">&#93;</span>
+            </h2>
+    
+            <ul class="teachers__list">
+                <li class="teachers__list-item left-block">
+                    <div class="teachers__list-block">
+                        <div class="teachers__name-pos">
+                            <img class="teachers__list-photo" src="../images/desc/teacher-1.jpg" alt="Reviews">
+                            <span class="teachers__list-name">Ярослав Вовченко</span>
+                        </div>
+                        <p class="teachers__list-text">
+                            - JavaScript Software Developer в SD
+                            Solutions <br>
+                            - Досвід роботи JavaScript 2 роки <br>
+                            - Більше 5 готових web-проектів
+                        </p>
+    
+                        <p class="teachers__list-exp">
+                            Навчить як правильно кодити
+                            і створювати односторінкові
+                            сайти використовуючи HTML/CSS.
+                        </p>
+    
+    
+                    </div>
+                </li>
+                <li class="teachers__list-item center-block">
+                    <div class="teachers__list-block">
+                            <div class="teachers__name-pos">
+                        <img class="teachers__list-photo" src="../images/desc/teacher-2.jpg" alt="Reviews">
+                        <span class="teachers__list-name">Максим Норець</span>
+                        </div>
+                        <p class="teachers__list-text">
+                            - Front-end Developer <br>
+                            - 4 готових web-проектів
+                        </p>
+    
+                        <p class="teachers__list-exp">
+                            Навчить розробляти зручний
+                            інтерфейс користувача для сайту.
+                        </p>
+    
+                        <div class="slider__btns-teach">
+                            <div class="slider__btn-teach">
+                                <svg class="reviews__icon">
+                                    <use xlink:href="../images/svg/reviews-arrows-sprite.svg#icon-arrow-left"></use>
+                                </svg>
+                            </div>
+                            <div class="slider__btn-teach">
+                                <svg class="reviews__icon">
+                                    <use xlink:href="../images/svg/reviews-arrows-sprite.svg#icon-arrow-right"></use>
+                                </svg>
+                            </div>
+                        </div>
+    
+                    </div>
+                </li>
+                <li class="teachers__list-item right-block">
+                    <div class="teachers__list-block">
+                            <div class="teachers__name-pos">
+                        <img class="teachers__list-photo" src="../images/desc/teacher-3.jpg" alt="Reviews">
+                        <span class="teachers__list-name">Софія Гордієнко</span>
+                        </div>
+                        <p class="teachers__list-text">
+                            - Двічі сертифікований тренер <br>
+                            Soft Skills <br>
+                            - Project Manager в “Brighta” <br>
+                            - PO
+                        </p>
+    
+                        <p class="teachers__list-exp">
+                            Навчить застосовувати методологію Scrum і Agile в роботі над IT проектом.
+                        </p>
+    
+                    </div>
+                </li>
+            </ul>
+    
+        </div>
+    </section>
+    <section class="certificate">
+        <div class="container">
+    
+    
+            <h2 class="section__title white-title">
+                <span class="section__title-blockquote">&#91;</span>
+                сертифікат_
+                <span class="section__title-blockquote">&#93;</span>
+            </h2>
+    
+            <div class="certificate__block">
+                <p class="certificate__block-text">
+                    Після успішного складання
+                    командного проекту
+                    студенти GoITeens
+                    отримують сертифікат
+                </p>
+    
+                <img class="ceertificate__block-img" src="./images/desc/certificate-set-desk.png" alt="Certificate">
+            </div>
+    
+            <img class="saturn-img" src="./images/desc/saturn.png" alt="Saturn">
+    
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="container">
+            <h2 class="section__title reviews-title">
+                <span class="section__title-blockquote">&#91;</span>
+                відгуки_
+                <span class="section__title-blockquote">&#93;</span>
+            </h2>
+    
+            <ul class="reviews__list">
+                <li class="reviews__list-item left-block">
+                    <div class="reviews__list-block">
+                        <img class="reviews__list-photo" src="./images/desc/reviews-2.png" alt="Reviews" width="135"
+                            height="135">
+                        <img class="reviews__list-quot" src="./images/quotes.png" alt="quot" width="17" height="12">
+    
+                        <span class="reviews__list-name">Алексей Соколюк</span>
+                        <p class="reviews__list-text">
+                            Отличные курсы, все понятно рассказывают, учителя веселые, уроки проходят интересно и без
+                            затруднений.
+                        </p>
+    
+                    </div>
+                </li>
+                <li class="reviews__list-item center-block">
+                    <div class="reviews__list-block">
+                        <img class="reviews__list-photo" src="./images/desc/reviews-1.png" alt="Reviews" width="135"
+                            height="135">
+                        <img class="reviews__list-quot" src="./images/quotes.png" alt="quot" width="17" height="12">
+    
+                        <span class="reviews__list-name">Tema Galis</span>
+                        <p class="reviews__list-text">
+                            Я дуже радий, що навчаюся в Goiteens зі своєю класною групою. Курси від Goiteens допомогли /
+                            допомагають мені бути більш рішучим, винахідливим, відкритим до...
+                        </p>
+                        <a href="" class="reviews__list-readmore">(Читати далі)</a>
+    
+                        <div class="slider__btns">
+                            <div class="slider__btn">
+                                <svg class="reviews__icon">
+                                    <use xlink:href="./images/svg/reviews-arrows-sprite.svg#icon-arrow-left"></use>
+                                </svg>
+                            </div>
+                            <div class="slider__btn">
+                                <svg class="reviews__icon">
+                                    <use xlink:href="./images/svg/reviews-arrows-sprite.svg#icon-arrow-right"></use>
+                                </svg>
+                            </div>
+                        </div>
+    
+                    </div>
+                </li>
+                <li class="reviews__list-item right-block">
+                    <div class="reviews__list-block">
+                        <img class="reviews__list-photo" src="./images/desc/reviews-3.png" alt="Reviews" width="135"
+                            height="135">
+                        <img class="reviews__list-quot" src="./images/quotes.png" alt="quot" width="17" height="12">
+    
+                        <span class="reviews__list-name">Тарас Проць</span>
+                        <p class="reviews__list-text">
+                            Для мене курси програмування були чимось захмарним, незрозумілим.
+                            Як можна навчитись програмувати
+                            за півтора роки? Тому я до цих курсів відносився скептично, несерйозно. Але завдяки
+                            відмін...
+                        </p>
+                        <a href="" class="reviews__list-readmore">(Читати далі)</a>
+    
+                    </div>
+                </li>
+            </ul>
+    
+        </div>
+    </section>
+  </main>
+  <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <a href="" class="footer__logo">
+                <svg class="footer__logo-icon">
+                    <use xlink:href="./images/header-sprite.svg#icon-gologo"></use>
+                </svg>
+            </a>
+            <div class="contact">
+                <div class="contact__block">
+                    <span class="contact__block-adress">01133 Україна, Київ</span>
+                    <span class="contact__block-adress">5 хвилин від м. Печерська</span>
+                    <span class="contact__block-adress">бул. Лесі Українки 26</span>
+                    <span class="contact__block-adress">4-й поверх</span>
+                </div>
+                <div class="contact__block">
+                    <span class="contact__block-phone">contact@goiteens.ua</span>
+                    <span class="contact__block-phone">+38 093 343 21 27</span>
+                    <span class="contact__block-phone">+38 067 326 95 92</span>
+                    <span class="contact__block-phone">+38 050 366 17 77</span>
+                </div>
+    
+                <div class="contact__btn-desk">
+                    <a class="contact__btn-link">Залишити заявку</a>
+                </div>
+    
+            </div>
+    
+            <div class="contact">
+    
+                <div class="contact__btn">
+                    <a class="contact__btn-link">Залишити заявку</a>
+                </div>
+    
+                <div class="sociial">
+                    <ul class="social__list">
+                        <li class="social__list-item">
+                            <a href="" class="social__list-link">
+                                <svg class="icon-social tl">
+                                    <use xlink:href="./images/social-svg/social-sprite.svg#icon-telegram"></use>
+                                </svg> </a>
+                        </li>
+                        <li class="social__list-item">
+                            <a href="" class="social__list-link">
+                                <svg class="icon-social fb">
+                                    <use xlink:href="./images/social-svg/social-sprite.svg#icon-facebook"></use>
+                                </svg> </a>
+                        </li>
+                        <li class="social__list-item">
+                            <a href="" class="social__list-link">
+                                <svg class="icon-social yt">
+                                    <use xlink:href="./images/social-svg/social-sprite.svg#icon-youtube"></use>
+                                </svg> </a>
+                        </li>
+                    </ul>
+                </div>
+    
+            </div>
+    
+            <div class="law">
+                <ul class="law__list">
+                    <li class="law__list-item">
+                        <a href="" class="law__list-link">Політика конфіденційності</a>
+                    </li>
+                    <li class="law__list-item">
+                        <a href="" class="law__list-link">Відмова від відповідальності</a>
+                    </li>
+                    <li class="law__list-item">
+                        <a href="" class="law__list-link">Згода з розсилкою</a>
+                    </li>
+                </ul>
+    
+    
+                <ul class="social__list-desk">
+                    <li class="social__list-item">
+                        <a href="" class="social__list-link">
+                            <svg class="icon-social tl">
+                                <use xlink:href="./images/social-svg/social-sprite.svg#icon-telegram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__list-item">
+                        <a href="" class="social__list-link">
+                            <svg class="icon-social fb">
+                                <use xlink:href="./images/social-svg/social-sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__list-item">
+                        <a href="" class="social__list-link">
+                            <svg class="icon-social yt">
+                                <use xlink:href="./images/social-svg/social-sprite.svg#icon-youtube"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+    
+            </div>
+    
+        </div>
+    
+        <img class="footer-rocket" src="./images/footer-rocket.png" alt="Rocket Footer">
+    
+    </footer>
+  <!-- Сюда будет всталена ссылка на файл скриптов -->
+  <!-- inject:js -->
+  <!-- endinject -->
+</body>
+
+</html>

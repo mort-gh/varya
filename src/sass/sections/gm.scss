@@ -1,0 +1,197 @@
+.section__title {
+    @extend %section-title;
+}
+
+.gm {
+    @extend %light-blue-bg;
+    padding-top: 20px;
+
+
+    &__bigtitle {
+        display: block;
+        text-align: center;
+        font-family: $font-helvetica-black;
+        font-size: 30px;
+        letter-spacing: 0.9px;
+        color: $color-light-grey;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        // animation background
+        background: url(../images/anim-field.png) repeat-y;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: aitf 80s linear infinite;
+        -webkit-transform: translate3d(0, 0, 0);
+        -webkit-backface-visibility: hidden;
+    }
+
+    &__list {
+        margin-top: 60px;
+
+        &-item {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__photo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+
+        &-img {
+            width: 135px;
+            height: 135px;
+        }
+    }
+
+    &__name {
+        display: block;
+        text-align: center;
+        font-family: $font-mistral;
+        color: $color-yellow;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    &__descr {
+        display: block;
+        text-align: center;
+        font-family: $font-helvetica-roman;
+        color: $color-dark-grey;
+        font-size: 16px;
+        letter-spacing: 0.48px;
+        line-height: 30px;
+        padding: 0 40px;
+    }
+}
+
+// animation bg bittitle
+
+@-webkit-keyframes aitf {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+// END animation bg bittitle
+
+@media (min-width: 768px) {
+
+    .section__title {
+        font-size: 20px;
+    }
+
+    .gm {
+
+        &__bigtitle {
+            font-size: 60px;
+        }
+
+        &__photo {
+            display: flex;
+
+            &-img {
+                width: 227px;
+                height: 227px;
+            }
+        }
+
+        &__text {
+            flex-basis: 60%;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: flex-start;
+            padding-left: 100px;
+        }
+
+        &__name {
+            font-size: 30px;
+            position: relative;
+
+            &::before {
+                display: block;
+                content: url(../images/desc/gm-arrow.png);
+                position: absolute;
+                top: -12px;
+                left: -75px;
+            }
+        }
+
+        &__descr {
+            font-size: 23px;
+            text-align: left;
+            padding: 0;
+        }
+
+        &__list {
+            padding-bottom: 80px;
+        }
+
+        &__list-item {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+    }
+
+}
+
+@media (min-width: 1440px) {
+
+    .section__title {
+        font-size: 30px;
+    }
+
+    .gm {
+        background-position: top 200px center;
+
+        &__bigtitle {
+            font-size: 90px;
+        }
+
+        &__photo {
+            flex-basis: 48%;
+            display: flex;
+            align-items: center;
+
+            &-img {
+                width: 227px;
+                height: 227px;
+            }
+        }
+
+        &__name {
+            font-size: 35px;
+
+            &::before {
+                display: none;
+            }
+        }
+
+        &__descr {
+            font-size: 25px;
+        }
+
+        &__text {
+            padding: 0;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            &-item {
+                flex-basis: 40%;
+            }
+        }
+    }
+}
